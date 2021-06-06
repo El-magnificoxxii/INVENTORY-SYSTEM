@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>About</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Abdullateef</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=#collapsibleNavbar>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid main">
+  	  <div class="row welcome text-center">
+  		  <div class="col-12">
+  			  <h1 class="display-4 subject" style="font-weight: 500;">Inventory</h1>
+  		  </div>
+  	  </div>
+    </div>
+    <div class="container-fluid main">
+    	<div class="row">
+    		<div class="col-lg-4">
+    			<div class="profile-photo">
+    				<h2></h2>
+    				<div class="">
+              <form class="" action="" method="">
+                <label for="">Product</label>
+                <input type="text" name="name" class="form-control text-muted" id="product">
+                <label for="">P/Q</label>
+                <input type="number" name="name"  class="form-control text-muted" id="pricePerQty">
+                <label for="">QTY</label>
+                <input type="number" name="name" class="form-control text-muted" id="quantity">
+                <label for=""></label>
+                <h3 id="amount"></h3>
+                <button id="submitButton" class="btn btn-primary form-control button" type="submit">Add to Inventory</button>
+              </form>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-7 info-cont">
+          <table class="list" id="inventoryList">
+                    <thead>
+                        <tr>
+                            <th>PRODUCT</th>
+                            <th>PRICE PER QTY</th>
+                            <th>QUANTITY</th>
+                            <th>AMOUNT</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventories">
+
+
+                    </tbody>
+                    <tfoot id="total">
+                      <tr id = "total-row">
+
+                      </tr>
+                    </tfoot>
+            </table>
+    		</div>
+      </div>
+    </div>
+
+      <script src="main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </html>
+</html>
